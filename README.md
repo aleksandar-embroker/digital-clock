@@ -1,5 +1,4 @@
-# Innovation projects base folder
-Innovation day projects
+# Knowledge base and self improvement projects main folder
 
 Run with command:
 
