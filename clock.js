@@ -1,8 +1,8 @@
 'use strict';
 
+// example of Immediately invoked function expression
 (() => {
-
-  // init values from Date()
+  // init needed values from Date oject
   let date = new Date();
   let hours = date.getHours();
   let minutes = date.getMinutes();
@@ -17,4 +17,8 @@
 
   let time = `${hours}:${minutes}:${seconds}:${period}`;
   console.log(time);
+
+  // console.log(typeof(time))
+  // output: string
+  // Okay maybe we want to return a value in next version?
 })()
