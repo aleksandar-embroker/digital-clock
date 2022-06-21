@@ -12,7 +12,7 @@ let getTime = () => {
   let seconds = date.getSeconds();
   let period = hours < 12 ? "AM" : "PM";
 
-  // set zero before the value when value less than 10
+  // set zero prefix if value of hours, seconds and minutes are one-digits
   // (for example 01:03:04 AM )
   hours = hours < 10 ? "0" + hours : hours;
   minutes = minutes < 10 ? "0" + minutes : minutes;
