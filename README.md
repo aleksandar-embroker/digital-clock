@@ -1,7 +1,7 @@
-# Knowledge base and self improvement projects main folder
+# Javascript Simple Digital Clock
 
-Run with command:
+Open following file in web browser:
 
 ```
-node clock.js
+index.html
 ```
