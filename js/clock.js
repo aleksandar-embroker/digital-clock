@@ -1,7 +1,10 @@
 'use strict';
 
-// example of Immediately invoked function expression
-(() => {
+/* getTime function
+/ returns string represantation of time
+/ example : 03:20:00:AM
+*/
+let getTime = () => {
   // init needed values from Date oject
   let date = new Date();
   let hours = date.getHours();
@@ -15,10 +18,20 @@
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
+  // return formatted time
   let time = `${hours}:${minutes}:${seconds}:${period}`;
-  console.log(time);
+  return time;
+}
 
-  // console.log(typeof(time))
-  // output: string
-  // Okay maybe we want to return a value in next version?
-})()
+// displayTime function
+let displayTime = () => {
+
+  // get current time
+  let time = getTime();
+
+  // set text content to #digitalClock element
+  document.getElementById("displayClock").innerText = time;
+  setTimeout(displayTime, 1000);
+}
+
+displayTime();

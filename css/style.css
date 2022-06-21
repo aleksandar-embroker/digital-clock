@@ -1,0 +1,14 @@
+body {
+    background: #080008;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #26df00;
+    font-size: 70px;
+    font-family: Verdana, monospace;
+}
