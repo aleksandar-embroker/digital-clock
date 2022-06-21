@@ -1,8 +1,9 @@
 'use strict';
 
-/* getTime function
-/ returns string represantation of time
-/ example : 03:20:00:AM
+/*
+getTime function
+returns string represantation of time
+example : 03:20:00:AM
 */
 let getTime = () => {
   // init needed values from Date oject
